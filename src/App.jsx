@@ -8,7 +8,19 @@ function App() {
 
   return (
     <>
-      <div>
+      <div class='firstDiv'>
+      <h1>Hello this is my portfolio</h1>
+      <h2>this is another header, but smaller</h2>
+      </div> 
+      <div class='secondDiv'>
+      <h1>Hello this is my portfolio</h1>
+      <h2>this is another header, but smaller</h2>
+      </div> 
+      <div class='thirdDiv'>
+      <h1>Hello this is my portfolio</h1>
+      <h2>this is another header, but smaller</h2>
+      </div> 
+      <div class='fourthDiv'>
       <h1>Hello this is my portfolio</h1>
       <h2>this is another header, but smaller</h2>
       </div> 
