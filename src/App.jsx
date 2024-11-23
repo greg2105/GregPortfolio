@@ -10,6 +10,7 @@ function App() {
     <>
       <div>
       <h1>Hello this is my portfolio</h1>
+      <h2>this is another header, but smaller</h2>
       </div> 
     </>
   )
