@@ -8,45 +8,45 @@ import linkedIn from './assets/linkedIn.svg';
 function App() {
   return (
     <>
-      <div class='Introduction'>
-        <div class='Header'>
-          <div class='icons'>
-            <img class='github' src={github} alt="github" />
-            <img class='mail' src={mail} alt="mail" />
-            <img class='linkedIn' src={linkedIn} alt="linkedIn" />
+      <header className="header">
+          <div className="icons">
+            <img className="github" src={github} alt="github" />
+            <img className="mail" src={mail} alt="mail" />
+            <img className="linkedIn" src={linkedIn} alt="linkedIn" />
           </div>
-        </div>
-        <div class='Title'>
-          <h1 class='Text'>Hello, my name is Greg Dorazio</h1>
-        </div>
-        <div class='programmer-container'>
-          <video class='programmer' autoPlay loop muted>
-            <source src={programmer} type="video/webm"/>
-            Your browser can't display this really cool webm video
-          </video>
-        <div class='line-and-text'>
-          <div class='glass-pane'>
-            <p class='text'> I am a new graduate from Penn State with a degree in Computer Science. I am based in Yorktown Heights, New York  </p>
+      </header>
+        {/* Everything in the introduction should take up the full page. 
+        The next full page will be 
+        another div that takes up the full page. (besides header and footer*/}
+      <div className="introduction">
+          <div className="title">
+            <h1 className="text">Hello, my name is Greg Dorazio</h1>
           </div>
-          <div class='line'></div>
-        </div>
+          <div class="webm-text-split">
+          <div className="programmer-container">
+            <video className="programmer" autoPlay loop muted>
+              <source src={programmer} type="video/webm" />
+              Your browser can't display this really cool webm video
+            </video>
+          </div>
+          <div className="line-and-text">
+            <div className="line"></div>            
+            <div className="glass-pane">
+              <p className="text">
+                I am a new graduate from Penn State with a degree in Computer Science. 
+                I am based in Yorktown Heights, New York
+              </p>
+            </div>
+          </div>
+          </div>
       </div>
-        {/* <div class='Body'>
-          <h2>Webdev, ML</h2>
-          <h3>Yorktown Heights, NY</h3>
-        </div> */}
+      {/* was going to use footer for this, but the viewport
+      height keeps bumping it out of the page */}
+      <div className="footer">
+          <img className="scroll" src={scroll} alt="scroll" />
       </div>
-      <div class='Footer'>
-          <img class='scroll' src={scroll} alt="scroll"/>
-      </div>
-      {/* <div class='Education'>
-        <h1>penn state</h1>
-      </div> 
-      <div class='Projects'>
-        <h1>inside the lumen</h1>
-      </div> */}
     </>
-  )
+  );
 }
 
 export default App
