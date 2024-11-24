@@ -8,13 +8,13 @@ import linkedIn from './assets/linkedIn.svg';
 function App() {
   return (
     <>
-      <header className="header">
+      <div className="header">
           <div className="icons">
             <img className="github" src={github} alt="github" />
             <img className="mail" src={mail} alt="mail" />
             <img className="linkedIn" src={linkedIn} alt="linkedIn" />
           </div>
-      </header>
+      </div>
         {/* Everything in the introduction should take up the full page. 
         The next full page will be 
         another div that takes up the full page. (besides header and footer*/}
@@ -29,16 +29,19 @@ function App() {
               Your browser can't display this really cool webm video
             </video>
           </div>
-          <div className="line-and-text">
+          <div className="line-and-aboutMe">
             <div className="line"></div>            
             <div className="glass-pane">
-              <p className="text">
+              <p className="aboutMe">
                 I am a new graduate from Penn State with a degree in Computer Science. 
                 I am based in Yorktown Heights, New York
               </p>
             </div>
           </div>
           </div>
+      </div>
+      <div class="education">
+          <h1>penn state</h1>
       </div>
       {/* was going to use footer for this, but the viewport
       height keeps bumping it out of the page */}

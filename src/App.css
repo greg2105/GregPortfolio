@@ -1,4 +1,8 @@
 /* Written in top down order */
+:root {
+  --cursor-color: grey;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -17,18 +21,24 @@ html, body {
   width: 100%;
 }
 
+.header .icons {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .header .github {
   width: 40px;
   height: 40px;
-  margin-right: 25px;
   margin-top: 10px;
 }
 
 .header .mail {
   width: 40px;
-  height: 40px;
+  height: 50px;
   margin-top: 10px;
-  margin-right: 25px;
 }
 
 .header .linkedIn {
@@ -46,37 +56,36 @@ html, body {
 }
 
 .introduction {
-  z-index: 100;
   display: flex;
   flex-direction: column;
   color: #022b3a;
   height: 90vh;
   width: 100vw;
-  margin: 0;
 }
 
 .introduction .title {
-  display: flex;
-  width: 100%;
-  align-items: center;
+  margin-top: 10vh;
   justify-content: center;
+  align-items: center;
+  display: inline-block;
 }
 
 /* The steps value is not counting a period if I add one later*/
 .introduction .title .text {
-  /* These top 3 only for styling*/
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* These top 2 only for styling*/
   font-size: 3em;
   letter-spacing: 2px;
-  font-family: monospace;
-
+  
+  /* These bottom ones for animation*/
   border-right: 5px solid;
-  width: 100%;
-  white-space: nowrap;
   overflow: hidden;
-  animation:
+  white-space: nowrap;
+  animation: 
     typing 2s steps(30),
     cursor .4s step-end infinite alternate;
-  font-family: "Parkinsans", sans-serif;
 }
 
 .webm-text-split{
@@ -84,10 +93,6 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
-
-.programmer-container {
-  display: flex;
 }
 
 .programmer {
@@ -104,15 +109,14 @@ html, body {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
 }
 
-.line-and-text {
+.line-and-aboutMe {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
   height: auto;
 }
 
@@ -124,10 +128,9 @@ html, body {
   animation: drawLine 2s 2s forwards;
 }
 
-.text {
+.line-and-aboutMe .aboutMe {
   font-family: "Parkinsans", sans-serif;
   margin-left: 20px;
-  display: block;
   white-space: normal;
   opacity: 0;
   transform: translateX(-20px);
@@ -151,7 +154,7 @@ html, body {
 /* animation stuff down here */
 @keyframes drawLine {
   to {
-    height: 135px;
+    height: 90px;
     opacity: .4;
   }
 }
