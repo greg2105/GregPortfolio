@@ -138,17 +138,40 @@ html, body {
 }
 
 .tech-stack {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
-  gap: 10px;
-  align-items: center;
-  width: 100vw;
+  overflow: hidden;
+  height: var(--height);
+  white-space: nowrap;
+  width: 75%;
+  margin-left: 15%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10% 90%,
+    transparent
+  );
 }
 
+.tech-stack-slide {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+}
+
+/* width: 40px
+   height: 40px
+   quantity: 9 */
 .tech-stack img {
-  height: 40px;
-  width: 40px;
+  height: var(--width);
+  width: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1));
+}
+
+.tech-stack:hover img {
+  animation-play-state: paused!important;
 }
 
 .footer {
@@ -194,5 +217,14 @@ html, body {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
   }
 }

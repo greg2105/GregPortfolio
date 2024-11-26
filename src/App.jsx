@@ -60,16 +60,23 @@ function App() {
                 <span class="graduate"> Graduate student </span>
               </div>
             </div>
-          <div class="tech-stack">
-            <img className="js" src={javascript} alt="js" />
-            <img className="hmtl" src={html5} alt="GitHub" />
-            <img className="css" src={css3} alt="GitHub" />
-            <img className="react" src={react} alt="GitHub" />
-            <img className="python" src={python} alt="GitHub" />
-            <img className="cplusplus" src={cplusplus} alt="GitHub" />
-            <img className="aws" src={aws} alt="GitHub" />
-            <img className="github" src={githubicon} alt="GitHub" />
-            <img className="linux" src={linuxtux} alt="GitHub" />
+          <div class="tech-stack" style={{
+            '--width': '40px',
+            '--height': '40px',
+            '--quantity': '9',
+            }}
+          >
+            <div class="tech-stack-slide">
+              <img className="item" style={{ '--position': '1' }}src={javascript} alt="js" />
+              <img className="item" style={{ '--position': '2' }}src={html5} alt="GitHub" />
+              <img className="item" style={{ '--position': '3' }}src={css3} alt="GitHub" />
+              <img className="item" style={{ '--position': '4' }}src={react} alt="GitHub" />
+              <img className="item" style={{ '--position': '5' }}src={python} alt="GitHub" />
+              <img className="item" style={{ '--position': '6' }}src={cplusplus} alt="GitHub" />
+              <img className="item" style={{ '--position': '7' }}src={aws} alt="GitHub" />
+              <img className="item" style={{ '--position': '8' }}src={githubicon} alt="GitHub" />
+              <img className="item" style={{ '--position': '9' }}src={linuxtux} alt="GitHub" />
+            </div>
           </div>
       </div>
       <div class="education">
