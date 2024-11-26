@@ -1,20 +1,28 @@
 import './App.css';
-import github from './assets/github.svg';
-import mail from './assets/mail.svg';
-import scroll from './assets/scrollDownTransparent.gif';
-import programmer from './../public/programmer.webm';
-import linkedIn from './assets/linkedIn.svg';
+
+{/* Header icons */}
+import linkedIn from './assets/header-icons/linkedIn.svg';
+import github from './assets/header-icons/github.svg';
+import mail from './assets/header-icons/mail.svg';
 
 {/* Tech icons */}
-import { JavascriptOriginal } from 'devicons-react';
-import { Html5Original } from 'devicons-react';
-import { Css3Plain } from 'devicons-react';
-import { ReactOriginal } from 'devicons-react';
-import { PythonOriginal } from 'devicons-react';
-import { CplusplusPlain } from 'devicons-react';
-import { GithubOriginal } from 'devicons-react';
-import { AmazonwebservicesOriginalWordmark } from 'devicons-react';
-import { LinuxOriginal } from 'devicons-react';
+import aws from './assets/tech-stack/aws.svg'
+import cplusplus from './assets/tech-stack/c-plusplus.svg'
+import css3 from './assets/tech-stack/css-3.svg'
+import githubicon from './assets/tech-stack/github-icon.svg'
+import html5 from './assets/tech-stack/html-5.svg'
+import javascript from './assets/tech-stack/javascript.svg'
+import linuxtux from './assets/tech-stack/linux-tux.svg'
+import python from './assets/tech-stack/python.svg'
+import react from './assets/tech-stack/react.svg'
+
+
+{/* Misc icons */}
+import scroll from './assets/misc/scrollDownTransparent.gif';
+import programmer from './../public/programmer.webm';
+
+
+
 
 function App() {
   return (
@@ -46,26 +54,22 @@ function App() {
                 Your browser can't display this really cool webm video
               </video>
             </div>
-            <div className="line-and-aboutMe">
-              <div className="line"></div>            
-              <div className="glass-pane">
-                <p className="aboutMe">
-                  I am a new graduate from Penn State with a degree in Computer Science. 
-                  I am based in Yorktown Heights, New York
-                </p>
+            <div className="about-me">   
+                <span class="i-am-a"> I am a... </span>      
+                <span class="developer"> Developer </span>
+                <span class="graduate"> Graduate student </span>
               </div>
             </div>
-          </div>
           <div class="tech-stack">
-            <JavascriptOriginal size="500"/>
-            <Html5Original />
-            <Css3Plain />
-            <ReactOriginal />
-            <PythonOriginal />
-            <CplusplusPlain />
-            <AmazonwebservicesOriginalWordmark />
-            <GithubOriginal />
-            <LinuxOriginal />
+            <img className="js" src={javascript} alt="js" />
+            <img className="hmtl" src={html5} alt="GitHub" />
+            <img className="css" src={css3} alt="GitHub" />
+            <img className="react" src={react} alt="GitHub" />
+            <img className="python" src={python} alt="GitHub" />
+            <img className="cplusplus" src={cplusplus} alt="GitHub" />
+            <img className="aws" src={aws} alt="GitHub" />
+            <img className="github" src={githubicon} alt="GitHub" />
+            <img className="linux" src={linuxtux} alt="GitHub" />
           </div>
       </div>
       <div class="education">
