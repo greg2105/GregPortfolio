@@ -21,6 +21,8 @@ import react from './assets/tech-stack/react.svg'
 import scroll from './assets/misc/scrollDownTransparent.gif';
 import programmer from './../public/programmer.webm';
 
+{/* Projects */}
+import NebulAPIDemo from './assets/misc/NebulAPI-Demo.webm';
 
 
 
@@ -79,8 +81,14 @@ function App() {
             </div>
           </div>
       </div>
-      <div class="education">
-          <h1>penn state</h1>
+      <div class="projects">
+          <h1>NebulAPI</h1>
+          <div class="nebulaVideo">
+            <video className="NebulAPIDemo" autoPlay loop muted>
+              <source src={NebulAPIDemo} type="video/webm" />
+              Your browser can't display this really cool webm video
+            </video>
+          </div>
       </div>
       <div className="footer">
           <img className="scroll" src={scroll} alt="scroll" />

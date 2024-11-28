@@ -66,9 +66,9 @@ html, body {
 
 .introduction .title {
   margin-top: 10vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: inline-block;
 }
 
 /* The steps value is not counting a period if I add one later*/
@@ -142,7 +142,7 @@ html, body {
   overflow: hidden;
   height: var(--height);
   white-space: nowrap;
-  width: 75%;
+  width: 50%;
   margin-left: 15%;
   mask-image: linear-gradient(
     to right,
