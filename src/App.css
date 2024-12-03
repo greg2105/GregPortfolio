@@ -139,7 +139,8 @@ html, body {
 }
 
 .about-me .developer {
-  font-size: 3em;
+  font-size: 1em;
+  width: 20rem;
 }
 
 .about-me .graduate {
