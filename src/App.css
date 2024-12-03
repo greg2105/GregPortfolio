@@ -7,44 +7,66 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Parkinsans", sans-serif;
+  font-family: "ocr-a-std", monospace;
   background-color: #2d2d30;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e5e5e5' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e5e5e5' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   overflow: auto;
+}
+
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1485px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 8px; 
+  }
+}
+
+@media screen and (max-width: 495px) {
+  html {
+    font-size: 5px;
+  }
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 10vh;
+  height: 10vh;
   width: 100%;
 }
 
 .header .icons {
   display: flex;
-  width: 150px;
+  width: fit-content;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .header .github {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .header .mail {
-  width: 40px;
-  height: 50px;
-  margin-top: 10px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .header .linkedIn {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .header .github:hover,
@@ -57,53 +79,56 @@ html, body {
 
 .introduction {
   display: flex;
+  align-items: center;
   flex-direction: column;
   color: white;
-  min-height: 90vh;
+  height: 100rem;
   width: 100vw;
 }
 
 .introduction .title {
-  display: flex;
+  width: fit-content;
+  display: inline-block;
   justify-content: center;
   align-items: center;
+  height: 10%;
 }
 
 /* The steps value is not counting a period if I add one later*/
 .introduction .title .text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: fit-content;
   /* These top 2 only for styling*/
-  font-size: 3em;
-  letter-spacing: 2px;
+  font-size: 2rem;
+  letter-spacing: .5rem;
   
   /* These bottom ones for animation*/
-  border-right: 5px solid;
+  border-right: .5rem solid;
   overflow: hidden;
   white-space: nowrap;
   animation: 
     typing 2s steps(30),
     blink .9s step-end infinite;
+  text-align: left;
 }
 
 .webm-text-split{
+  border-radius: 50px;
   display: flex;
+  height: 50%;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
 
 .programmer {
-  width: 300px;
+  width: 20rem;
   height: auto;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 100%;
   position: relative;
   justify-content: center;
   gap: 20px;
@@ -122,31 +147,19 @@ html, body {
 }
 
 .about-me .aboutMe {
-  font-family: "Parkinsans", sans-serif;
   margin-left: 20px;
   white-space: normal;
   max-width: 400px;
 }
 
 .tech-stack {
-  margin-top: 20px;
-  overflow: visible;
-  height: var(--height);
-  white-space: nowrap;
-  width: 50%;
-  margin-left: 15%;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000 10% 90%,
-    transparent
-  );
-}
-
-.tech-stack-slide {
+  position: relative;
   display: flex;
-  width: 100%;
-  min-width: calc(var(--width) * var(--quantity));
+  padding-top: 10%;
+  overflow: visible;
+  height: 10%;
+  width: 70%;
+  white-space: nowrap;
 }
 
 /* width: 40px
@@ -165,22 +178,49 @@ html, body {
   animation-play-state: paused!important;
 }
 
+.arrow-scroll {
+  position: relative;
+  height: 10%;
+}
+
+.arrow {
+  margin-top: 8em;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: 
+    translateX(-50%)
+    rotate(45deg);
+}
+
+.arrow:nth-child(2) {
+  animation:
+    arrow1 1.5s
+    ease-in-out infinite;
+}
+
+.arrow:nth-child(3) {
+  animation:
+    arrow2 1.5s
+    ease-in-out infinite;
+}
+
 .nebulAPIDemo {
-  width: 600px;
+  width: 60rem;
   height: auto;
 }
 
-.footer {
-  position: fixed;
+.projects {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.footer .scroll {
-  margin-bottom: 5px;
+  flex-direction: column;
+  color: white;
+  height: 50rem;
+  width: 100vw;
 }
 
 /* animation stuff down here */
@@ -222,5 +262,19 @@ html, body {
   }
   to {
     left: calc(var(--width) * -1);
+  }
+}
+
+@keyframes arrow1 {
+  100% {
+    opacity: 0;
+    top: 100%;
+  }
+}
+
+@keyframes arrow2 {
+  100% {
+    opacity: 0;
+    top: 50%;
   }
 }

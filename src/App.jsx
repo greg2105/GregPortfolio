@@ -57,14 +57,14 @@ function App() {
               </video>
             </div>
             <div className="about-me">   
-                <span class="i-am-a"> I am a... </span>      
-                <span class="developer"> Developer </span>
-                <span class="graduate"> Graduate student </span>
-              </div>
+              <span class="i-am-a"> text </span>      
+              <span class="developer"> text </span>
+              <span class="graduate"> text </span>
             </div>
+          </div>
           <div class="tech-stack" style={{
-            '--width': '40px',
-            '--height': '40px',
+            '--width': '3rem',
+            '--height': '3rem',
             '--quantity': '9',
             }}
           >
@@ -80,6 +80,11 @@ function App() {
               <img className="item" style={{ '--position': '9' }}src={linuxtux} alt="GitHub" />
             </div>
           </div>
+          <div class="arrow-scroll">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+          </div>
       </div>
       <div class="projects">
           <h1>NebulAPI</h1>
@@ -89,9 +94,6 @@ function App() {
               Your browser can't display this really cool webm video
             </video>
           </div>
-      </div>
-      <div className="footer">
-          <img className="scroll" src={scroll} alt="scroll" />
       </div>
     </>
   );
