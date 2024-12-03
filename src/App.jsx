@@ -84,7 +84,7 @@ function App() {
       <div class="projects">
           <h1>NebulAPI</h1>
           <div class="nebulaVideo">
-            <video className="NebulAPIDemo" autoPlay loop muted>
+            <video className="nebulAPIDemo" autoPlay loop muted>
               <source src={NebulAPIDemo} type="video/webm" />
               Your browser can't display this really cool webm video
             </video>
